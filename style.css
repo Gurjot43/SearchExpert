@@ -1,0 +1,158 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #b4c8db;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, main, footer {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+h1 span {
+    color: #3498db;
+}
+
+#search-bar {
+    display: flex;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#search-input {
+    flex-grow: 1;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+
+#search-button {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    font-size: 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#search-button:hover {
+    background-color: #2980b9;
+}
+
+#history-section {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+#history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #425467;
+    font-size: 1.5rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+#search-history {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#search-history li {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ecf0f1;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+#search-history li:hover {
+    background-color: #f7f9fa;
+}
+
+#clear-history {
+    background-color: #e45141;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+#clear-history:hover {
+    background-color: #c0392b;
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+    padding-top: 20px;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+@media (max-width: 600px) {
+    #search-bar {
+        flex-direction: column;
+        border-radius: 12px;
+    }
+
+    #search-input, #search-button {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    #search-button {
+        justify-content: center;
+    }
+
+    #history-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #clear-history {
+        margin-top: 10px;
+    }
+}
